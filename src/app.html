@@ -1,6 +1,3 @@
-<!--<template>
-  <h1>${message}</h1>
-</template>-->
 
 <template>
   <require from="bootstrap/css/bootstrap.css"></require>
@@ -14,11 +11,10 @@
         <span>Contacts</span>
       </a>
     </div>
-  </nav>
- <loading-indicator loading.bind="router.isNavigating || api.isRequesting"></loading-indicator>
+  </nav>  
+ <loading-indicator loading.bind="router.isNavigating || isLoading"></loading-indicator>
   <div class="container">
     <div class="row">
-      <!--<div class="col-md-4">Contact List Placeholder</div>-->
       <contact-list class="col-md-4"></contact-list>
       <router-view class="col-md-8"></router-view>
     </div>

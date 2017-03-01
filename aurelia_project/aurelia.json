@@ -116,6 +116,22 @@
           "aurelia-templating-binding",
           "text",
           {
+            "name": "firebase",
+            "path": "../node_modules/firebase",
+            "main": "firebase",
+            "exports": "firebase"
+          },
+          {
+            "name": "redux",
+            "path": "../node_modules/redux/dist",
+            "main": "redux.min"
+          },
+          {
+            "name": "redux-observable",
+            "path": "../node_modules/redux-observable/dist",
+            "main": "redux-observable.min"
+          },
+          {
             "name": "aurelia-templating-resources",
             "path": "../node_modules/aurelia-templating-resources/dist/amd",
             "main": "aurelia-templating-resources"
@@ -131,6 +147,11 @@
             "main": "aurelia-testing",
             "env": "dev"
           },
+          {
+            "name": "rxjs",
+            "path": "../node_modules/rxjs",
+            "main": "Rx"
+          },
           "jquery",
           {
             "name": "bootstrap",
@@ -143,8 +164,7 @@
             "resources": [
               "css/bootstrap.css"
             ]
-          }
-          ,
+          },
           {
             "name": "nprogress",
             "path": "../node_modules/nprogress",
