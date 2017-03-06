@@ -35,10 +35,10 @@ function combineReducer(obj, initialState) {
     return (state: IAppState = initialState, action: IAction) => {
         let prevKey;
         return Object.keys(obj).reduce((accu, key) => {
-            if (accu === undefined) throw new Error(`${prevKey}--Reducer returned undefined`)
+            if (accu === undefined) throw new Error(`${prevKey}Reducer returned undefined`)
             prevKey = key;
             return obj[key](accu, action);
-        }, state);
+        }, Object.assign({},state));
     }
 }
 export const APPINITIALSTATE: IAppState = {
